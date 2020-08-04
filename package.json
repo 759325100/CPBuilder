@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "AWS_KEY=AKIAINODFGC7H2RL5AWQ AWS_SECRET=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 lambda deploy ./deploy.lambda"
+    "deploy": "AWS_KEY=AKIAIJKUC7UVKAPC5Y3A AWS_SECRET=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 lambda deploy ./deploy.lambda"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/759325100/CPBuilder#readme",
   "dependencies": {
-    "aws-lambda-response-builder": "^1.0.15"
+    "xml2js": "0.4.17",
+    "ejs": ">=1.0.0",
+    "wechat-crypto": "0.0.2"
   }
 }
