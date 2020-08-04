@@ -4,11 +4,8 @@
   "description": "彩票中奖啦",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-semistandard": "^15.0.0"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "AWS_KEY=AKIAINODFGC7H2RL5AWQ AWS_SECRET=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 lambda deploy ./deploy.lambda"
   },
   "repository": {
     "type": "git",

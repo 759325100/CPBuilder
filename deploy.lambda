@@ -1,0 +1,30 @@
+{
+  "PATH": "../CPBuilder",
+  "AWS_KEY": {
+    "Ref": "env.AWS_KEY"
+  },
+  "AWS_SECRET": {
+    "Ref": "env.AWS_SECRET"
+  },
+  "AWS_REGION": "us-east-1",
+
+  "FunctionName": "CPBuilder",
+  "Role": "arn:aws:iam::141330614880:role/service-role/CPBuilder-role-iy5tb8oo",
+  "Runtime": "nodejs12.x",
+  "Handler": "index.handler",
+  "MemorySize": "128",
+  "Timeout": "3",
+  "Environment": {
+    "Variables": {
+      "Hello": "World"
+    }
+  },
+  "Layers": [
+    "arn:aws:lambda:us-east-1:141330614880:layer:node_modules:1"
+  ],
+  "Tags": {
+    "k1": "v1",
+    "k2": "v2"
+  },
+  "Description": ""
+}
