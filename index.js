@@ -1,4 +1,4 @@
-const wx = require('./lib/wxprocess')
+const { wx } = require('./process')
 const handler = async (event) => {
   // TODO implement
   console.log(event)
@@ -6,7 +6,7 @@ const handler = async (event) => {
   const body = event.body
   const query = event.queryStringParameters
   // 在此处进行分发
-  if (query.signature && body.includes('<xml>')) {
+  if (query && query.signature && body && body.includes('<xml>')) {
     return wx.handler(body)
   }
   return {

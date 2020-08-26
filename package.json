@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "AWS_KEY=AKIAJNW4LSGEJ36SC4WQ AWS_SECRET=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 lambda deploy ./deploy.lambda"
+    "deploy": "lambda deploy ./deploy.lambda"
   },
   "repository": {
     "type": "git",

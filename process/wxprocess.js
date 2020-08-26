@@ -1,4 +1,4 @@
-const wechat = require('./wechat')
+const wechat = require('../lib/wechat')
 const handler = async (body) => {
   // TODO implement
   console.log('INTO Wechat Process Event')
@@ -14,4 +14,4 @@ const handler = async (body) => {
   }
 };
 
-exports.wx = { handler }
+exports.handler = handler 
